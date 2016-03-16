@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px;
+				background-color:#f3f3f3;
+				padding-bottom:3%;
+				height:100%;
+            }
+            input, textarea {
+                width: 100%; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+			a{
+				text-decoration:none;
+				color:#aaaaaa;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+			p{
+				color:#3b3b3b;
+			}
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			.clr{
+				clear:both;
+			}
+			.extension-wrapper{
+				width:100%;
+				display:block;
+			}
+			.extension-header-here{
+				width: 96%;
+			    display: block;
+				background-color: #e9e8ec;
+				height: 15px;
+				padding: 2% 2%;
+			}
+			.extension-header-here a{
+				float:right;
+				margin-left:2%;
+			}
+			.comments-section{
+				width:94%;
+				margin:0 auto;
+			}
+			.show-older-comments{
+				margin:2% 0%;
+			}
+			.user-comments-wrapper{
+				width:100%;
+				display:inline-block;
+			}
+			.user-data{
+				width:100%;
+				display: inline-block;
+                margin-bottom: 2%;
+			}
+			.user-img{
+				width:9%;
+				float:left;
+				margin-right:2%;
+			}
+			.user-img img{
+				max-width:100%;
+				float:left;
+			}
+			.user-comment-here{
+				width:78%;
+				float:left;
+				line-height: 1.4em;
+				text-align: justify;
+			}
+			.user-comment-here .user-name{
+				float:left;
+				font-weight:bold;
+				margin-right:2%;
+				color:#00adc4;
+			}
+			.comment-time{
+				float:right;
+				text-align:right;
+				width:10%;
+			}
+			.comment-time p{
+				color:#aaaaaa;
+			}
+			.type-comment{
+				width:99.9%;
+				margin: 3% 0%;
+			}
+			.type-comment input[type=text]{
+				padding:1.5% 2%;
+				width:96%;
+			}
+			.submit-comment{
+				float: left;
+				width: 25%;
+				margin-right: 2%;
+			}
+			.submit-comment input[type=submit]{
+				width: 100%;
+				background-color: #3e599d;
+				border: 1px solid transparent;
+				color: white;
+				padding: 4% 4%;
+				border-radius: 3px;
+				font-size: 12px;
+				height: 25px;
+				cursor:pointer;
+			}
+			.clear-form{
+				float:left;
+				width:18%
+			}
+			.clear-form input[type=submit]{
+				width: 100%;
+				background-color: #e1e1e1;
+				border: 1px solid transparent;
+				color: black;
+				padding: 4% 4%;
+				border-radius: 3px;
+				font-size:12px;
+				height: 25px;
+				cursor:pointer;
+				color:#2f2f2f;
+			}
+        </style>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+      
+    <!----extension header here-->
+    
+    <!-----extension wrapper here-->    
+     <div class="extension-wrapper">    
+       <div class="extension-header-here">  
+        <a href="">TopComments</a>
+        <a href="">Login</a>
+        <a href="">Register</a>        
+       </div>
+      
+     <div class="clr"></div>
+       
+       
+       
+     <!------comments section here-->
+     <div class="comments-section"> 
+     <!-------older comments-->
+      <div class="show-older-comments">   
+       <a href="#">Show older comments</a>  
+      </div> 
+      
+      <div class="clr"></div>
+      
+      <!-----user comments section here-->
+       <div class="user-comments-wrapper">
+        
+        
+       <!----first-user-->
+        <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>1 min</p>
+         </div>
+        </div>
+         
+       <div class="clr"></div>
+        
+       <!----second-user-->
+        <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>Simply dummy text of the printing.</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>22 d</p>
+         </div>
+        </div>
+        
+       <div class="clr"></div>
+           
+       <!----third-user-->
+        <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>2 w</p>
+         </div>
+        </div>
+     
+       <div class="clr"></div>
+     
+       <!----fourth-user-->
+       <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>is simply dummy text of the printing.......!!</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>1 d</p>
+         </div>     
+       </div>
+     
+       <div class="clr"></div>
+     
+       <!----fifth-user-->
+       <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>Simply dummy.</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>4 y</p>
+         </div>
+       </div>
+       
+       <div class="clr"></div>
+     
+      <!----sixrh-user-->
+      <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>is simply dummy text of the printing and typesetting industry.</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>1 day</p>
+         </div>
+      </div>
+     
+       <div class="clr"></div>
+     
+     <!----seventh-user-->
+      <div class="user-data">
+         <div class="user-img">
+          <a href="#"><img src="user-img.png" alt="image not found"></a>
+         </div>
+        
+         <div class="user-comment-here">
+          <a href="#"><p class="user-name">Lorem Ipsum</p></a>
+          <p>Is Dummy......!!!!</p>
+         </div>
+        
+         <div class="comment-time">
+          <p>9 w</p>
+         </div>
+      </div>
+     
+       <div class="clr"></div>
+     
+     
+     <!-----type your comment-->
+      <div class="type-comment">
+       <input type="text" placeholder="Type Your Comments here....">
+      </div>
+     
+     <div class="clr"></div>
+     
+     <!------submit here-->
+      <div class="submit-comment">
+       <input type="submit" value="Post Comment">
+      </div>
+      
+      
+      <div class="clear-form">
+       <input type="submit" value="Clear form">
+      </div>
+     
+    
+    
+     
+      </div>
+      <!-----user comments section ends here-->
+       
+     
+     </div>
+     <!-----comments section ends here-->
+     
+     </div>
+     <!------extension ends here---->
+     
+     
+    </body>
+</html>
